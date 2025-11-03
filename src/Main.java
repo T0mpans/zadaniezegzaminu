@@ -2,10 +2,11 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        //komentarz1
+        Notatka notatka1 = new Notatka("Lubię programować", "trening czyni mistrza");
+        Notatka notatka2 = new Notatka("Uczę się", "...bo chcę");
+        notatka1.diagnostyczna();
+        notatka1.wypiszTytulTresc();
+        notatka2.diagnostyczna();
+        notatka2.wypiszTytulTresc();
     }
 }
